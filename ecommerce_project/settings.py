@@ -20,6 +20,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'ecommerce.apps.EcommerceConfig',
+    'users.apps.UsersConfig',
+    'base.apps.BaseConfig',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
