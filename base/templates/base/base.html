@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home :: SandlesVille</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SandlesVille</title>
     <link rel="stylesheet" type="text/css" href="{% static 'base/bs4/css/bootstrap.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'base/main.css' %}">
 </head>
@@ -39,6 +41,10 @@
         </div>
       </div>
     </main>
+    <script type="text/javascript" src="{% static 'base/bs4/js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/bs4/js/popper.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/bs4/js/bootstrap.min.js' %}"></script>
+    {% block js_scripts %}{% endblock %}
 </body>
 </html>
 
