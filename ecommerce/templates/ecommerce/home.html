@@ -19,24 +19,25 @@
             </div> <!-- col.// -->
             <aside class="col-md-4">
                 {% for product in products|slice:":3" %}
-                    {% if forloop.counter < 4 %}
+                    {% if forloop.counter <= 3 %}
                     <div class="card mb-3">
                         <figure class="itemside">
                             {% if product.images.first %}
                             <div class="aside">
-                                <div class="img-wrap p-2 border-right">
+                                <div class="img-wrap pr-2 border-right">
                                     <img class="img-sm" src="{{ product.images.first.image.url }}"/>
                                 </div>
                             </div>
                             {% endif %}
                             <figcaption class="text-wrap align-self-center">
-                                <h6 class="title">{{ product.title }}</h6>
-                                <a href="#">Details >> </a>
+                                <h6 class="title"><a href="#" >{{ product.title }}</a></h6>
+                                <p> ${{ product.price }} <a href="#" role="button" class="btn btn-secondary btn-sm">Add to cart</a></p>
                             </figcaption>
                         </figure>
                     </div> <!-- card.// -->
                     {% endif %}
                 {% endfor %}
+                <a href="#">Explore more products ...</a>
             </aside>
         </div>
     </div> <!-- container .//  -->
@@ -54,10 +55,10 @@
                 <article>
                     <p>The Maasai are a Nilotic largest group inhabiting northern, central and southern Kenya and northern Tanzania.
                     They are among the best known local populations internationally due to their residence in towns and villages near
-                    the many game parks of the African Great Lakes, and their distinctive customs and dress.[4] The Maasai speak the
-                    Maa language (ɔl Maa),[4] a member of the Nilo-Saharan family that is related to the Dinka, Kalenjin and Nuer languages.
+                    the many game parks of the African Great Lakes, and their distinctive customs and dress. The Maasai speak the
+                    Maa language (ɔl Maa), a member of the Nilo-Saharan family that is related to the Dinka, Kalenjin and Nuer languages.
                     Many have become educated in the official languages of Kenya and Tanzania, Swahili and English. The Maasai population
-                    has been reported as numbering 2,841,622 in Kenya in the 2009 census,[1] compared to 1,377,089 in the 1989 census. <br/><a href="https://en.wikipedia.org/wiki/Maasai_people">More details</a></p>
+                    has been reported as numbering 2,841,622 in Kenya in the 2009 census, compared to 1,377,089 in the 1989 census. <br/><a href="https://en.wikipedia.org/wiki/Maasai_people">More details</a></p>
                     <p>Masai shoes is part of Masai culture. This shopping website gives you that opportunity to buy and get the shoes rightly delivered to your vicinity on time.</p>
                 </article>
             </div> <!-- card-body .// -->

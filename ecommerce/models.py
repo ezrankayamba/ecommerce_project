@@ -5,6 +5,7 @@ class Product(models.Model):
     title = models.CharField(max_length=100)
     record_date = models.DateTimeField(auto_now_add=True, auto_now=False)
     last_update = models.DateTimeField(auto_now_add=False, auto_now=True)
+    price = models.DecimalField(max_digits=20, decimal_places=2, default=10.00)
 
     class Meta:
         ordering = ('-record_date',)
