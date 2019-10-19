@@ -6,6 +6,9 @@ class Product(models.Model):
     record_date = models.DateTimeField(auto_now_add=True, auto_now=False)
     last_update = models.DateTimeField(auto_now_add=False, auto_now=True)
 
+    class Meta:
+        ordering = ('-record_date',)
+
     def __str__(self):
         return f'{self.title}'
 
@@ -19,6 +22,9 @@ class ProductImage(models.Model):
     image = models.ImageField(upload_to='product_images')
     record_date = models.DateTimeField(auto_now_add=True, auto_now=False)
     last_update = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    class Meta:
+        ordering = ('-record_date',)
 
     def __str__(self):
         return f'{self.product.title} - {self.image.url}'
