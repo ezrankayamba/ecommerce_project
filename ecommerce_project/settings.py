@@ -13,7 +13,7 @@ SECRET_KEY = 't*&sgxzv$av@hg&q53(51%=2vs5pd1byi53&cqov_tv521g&f8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '3.9.252.150', 'shopping.nezatech.co.tz']
 
 
 # Application definition
